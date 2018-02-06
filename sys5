@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "top 5 processes"
+
+top -d 5 | head -n12
+
+sleep 1
+exit
