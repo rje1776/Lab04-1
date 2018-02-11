@@ -22,3 +22,14 @@ end
 		box2.vm.network :private_network, ip: "192.168.56.102"
 		end
 end
+
+
+#!/bin/bash
+while [ true ]  ;do
+used=`free -m  | awk  'NR==3  {print $4}'`
+if [  $used  -lt  1500  ]   &&   [  $used  -gt  800  ]; then
+echo "Free memory is below 1500MB. Possible memory leak!!!"
+
+fi
+sleep 5
+done
