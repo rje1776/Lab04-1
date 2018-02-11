@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
 		end
 end
 	config.vm.define "box2" do |box2|
-		box2.vm.box="puphpet/ubuntu1404-x64"
+		box2..vm.box="puphpet/ubuntu1404-x64"
 		box2.vm.provision "shell", inline:<<-SHELL
 		#sudo apt-get update
 		#sudo apt-get install -y nginx
